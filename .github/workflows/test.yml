@@ -1,0 +1,19 @@
+name: test
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-15, macos-15-intel, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: Homebrew/actions/setup-homebrew@main
+      - run: brew install stephanschmidt/appfuzz/appfuzz
+      - run: brew test stephanschmidt/appfuzz/appfuzz
+      - run: brew audit --strict --online stephanschmidt/appfuzz/appfuzz
