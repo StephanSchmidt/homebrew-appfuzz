@@ -7,23 +7,23 @@ class Appfuzz < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/StephanSchmidt/appfuzz/releases/download/v0.8.0/appfuzz-aarch64-apple-darwin.tar.gz"
-      sha256 "b14a08e37d1c004dc017f287845dce9fa52d0d14a081a2080f3106bda2989a2c"
+      url "https://github.com/StephanSchmidt/appfuzz/releases/download/v0.8.1/appfuzz-aarch64-apple-darwin.tar.gz"
+      sha256 "6ee41ff82caf4f6d13b64f1c30cf659e6fb01b79b9561d8af1f71a94b6f89534"
     end
     on_intel do
-      url "https://github.com/StephanSchmidt/appfuzz/releases/download/v0.8.0/appfuzz-x86_64-apple-darwin.tar.gz"
-      sha256 "0b502b103a3e2c2249e7ee21ebade83fc67d3f57ed121a97492cdbca0a62a404"
+      url "https://github.com/StephanSchmidt/appfuzz/releases/download/v0.8.1/appfuzz-x86_64-apple-darwin.tar.gz"
+      sha256 "92ee9c0f29daffa5230e97560767965078472b1b664fcc7352823741dc8678e4"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/StephanSchmidt/appfuzz/releases/download/v0.8.0/appfuzz-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "4a4e9ac2e66e7f8e723a1fd2787865aa58295f53982907ec652074fb7797e998"
+      url "https://github.com/StephanSchmidt/appfuzz/releases/download/v0.8.1/appfuzz-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "8dd5ef1e42f6cd5c1f27a88d1e51bd1124fdadd0b4db60b2c3a5dae2e284ba0e"
     end
     on_intel do
-      url "https://github.com/StephanSchmidt/appfuzz/releases/download/v0.8.0/appfuzz-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "8c34884c0d2b2ec147cee8e5bb6933ef5aa3e8a98b305b210f6cf0428e1803a1"
+      url "https://github.com/StephanSchmidt/appfuzz/releases/download/v0.8.1/appfuzz-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "682e30a578d49026ac64918ffc9235dc16c28a81abfa8b2f8939f73b6d55b403"
     end
   end
 
